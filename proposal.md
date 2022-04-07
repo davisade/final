@@ -1,23 +1,39 @@
-# Preproposal
+# Proposal
 
-## What idea(s) do you have for your final project?
+## What will (likely) be the title of your project?
 
-1. Using photoshop to generate many separate drawings of eyes, hair, weapon, clothes, etc... to allow the user to design a character.
-    For example:
-    Promt user to pick an eye type:
-    Options(slanted, wide, closed, winking)
-    user selects eye type and it is displayed and prompts user if they like it and want to move on, or reselect another eye type
-    Repeat for other options (hair, mouth, nose, gender, etc...)
+TODO
 
-2. Create a virtual duck that walks in a direction and bounces off the edge of the screen (almost like the DVD bouncing logo). Randomly the duck will do a little jumping animation.
+## In just a sentence or two, summarize your project. (E.g., "A website that lets you buy and sell stocks.")
 
-## If you plan to collaborate with one or two classmates, what are their names?
+TODO
 
-Working alone
+## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
 
-## Do you have any questions of your own?
+TODO
 
-Any preference as to which project seems more interesting and fits criteria? 
-Any advice off the bat?
+## If planning to combine 1051's final project with another course's final project, with which other course? And which aspect(s) of your proposed project would relate to 1051, and which aspect(s) would relate to the other course?
 
-Thank you
+TODO, if applicable
+
+## If planning to collaborate with 1 or 2 classmates for the final project, list their names, email addresses, and the names of their assigned TAs below.
+
+TODO, if applicable
+
+## In the world of software, most everything takes longer to implement than you expect. And so it's not uncommon to accomplish less in a fixed amount of time than you hope.
+
+### In a sentence (or list of features), define a GOOD outcome for your final project. I.e., what WILL you accomplish no matter what?
+
+TODO
+
+### In a sentence (or list of features), define a BETTER outcome for your final project. I.e., what do you THINK you can accomplish before the final project's deadline?
+
+TODO
+
+### In a sentence (or list of features), define a BEST outcome for your final project. I.e., what do you HOPE to accomplish before the final project's deadline?
+
+TODO
+
+## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
+
+TODO
