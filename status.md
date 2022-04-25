@@ -20,7 +20,7 @@ I have drawn 19 images in photoshop, and began writing code to set up a backgrou
 
 #### What have you not done for your project yet?
 
-Create the code to select each body feature
+Create the code to select each body feature.
 
 #### What problems, if any, have you encountered?
 
