@@ -11,7 +11,7 @@ import turtle
 t = turtle.Turtle()
 wn = turtle.Screen()
 wn.title('space')
-wn.bgpic('space.gif')
+wn.bgpic('images/space.gif')
 turtle.setup(1000, 667)
 
 # Options
@@ -20,36 +20,36 @@ options = {
         {
             "index": "1",
             "name": "Spikey",
-            "file": "fspikey.gif"
+            "file": "images/fspikey.gif"
         },
         {
             "index": "2",
             "name": "Leggy",
-            "file": "fleggy.gif"
+            "file": "images/fleggy.gif"
         },
     ],
     "Eyes": [
         {
             "index": "1",
             "name": "Angry",
-            "file": "fangry.gif"
+            "file": "images/fangry.gif"
         },
         {
             "index": "2",
             "name": "Cute",
-            "file": "fcute.gif"
+            "file": "images/fcute.gif"
         },
     ],
     "Mouth": [
         {
             "index": "1",
             "name": "Creepy",
-            "file": "fcreepy.gif"
+            "file": "images/fcreepy.gif"
         },
         {
             "index": "2",
             "name": "Vampire",
-            "file": "fvampire.gif"
+            "file": "images/fvampire.gif"
         },
     ],
 }
@@ -59,17 +59,17 @@ extras = {
     "Horns": {
             "index": "1",
             "name": "Horns",
-            "file": "fhorn.gif"
+            "file": "images/fhorn.gif"
     },
     "Cat": {
             "index": "2",
             "name": "Cat",
-            "file": "fcat.gif"
+            "file": "images/fcat.gif"
     },
     "Blush": {
             "index": "3",
             "name": "Blush",
-            "file": "fblush.gif"
+            "file": "images/fblush.gif"
     },
 }
 
