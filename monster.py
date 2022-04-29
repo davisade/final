@@ -5,18 +5,14 @@
 #move through traits, repreating line 4 each time
 #at the end ask if they want to start over, scrap the monster and begin the loop again
 
-from operator import truediv
-from re import M
-from PIL import Image
-import time
-import turtle, os
-t = turtle.Turtle()
+import turtle
 
+# Import Turtle
+t = turtle.Turtle()
 wn = turtle.Screen()
 wn.title('space')
 wn.bgpic('space.gif')
 turtle.setup(1000, 667)
-
 
 # Options
 options = {
@@ -107,18 +103,24 @@ for option in options.keys():
 # Prompt User for Extras
 more = input("Do you want to add any extras to your monster? y/n: ")
 while more == 'y':
-    print("Please Choose Your Monster's Extra")
 
-    # Select the Extra
-    for extra in extras.keys():
-        print(f"{extras[extra]['index']}. {extra}")
-    index = int(input('Select Extra Number: '))
+    shape_to_add = ''
+    while shape_to_add == '':
+        print("Please Choose Your Monster's Extra")
 
-    # Add extra to the screen
-    shape_to_add = ""
-    for extra in extras:
-        if extras[extra]["index"] == index:
-             shape_to_add = extras[extra]
+        # Select the Extra
+        for extra in extras.keys():
+            print(f"{extras[extra]['index']}. {extra}")
+        index = int(input('Select Extra Number: '))
+
+        # Add extra to the screen
+        shape_to_add = ""
+        for extra in extras:
+            if extras[extra]["index"] == index:
+                shape_to_add = extras[extra]
+
+        if shape_to_add == '':
+            print("Invalid Extras Number.. please try again")
 
     # Add the Shape to the Screen
     wn.addshape(shape_to_add['file'])
