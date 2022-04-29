@@ -27,6 +27,22 @@ options = {
             "name": "Leggy",
             "file": "images/fleggy.gif"
         },
+        {
+            "index": "3",
+            "name": "Blob",
+            "file": "images/fblob.gif"
+        },
+        {
+            "index": "4",
+            "name": "Cloudy",
+            "file": "images/fcloud.gif"
+        },
+        {
+            "index": "5",
+            "name": "Flamey",
+            "file": "images/fflame.gif"
+        }
+       
     ],
     "Eyes": [
         {
@@ -39,6 +55,21 @@ options = {
             "name": "Cute",
             "file": "images/fcute.gif"
         },
+        {
+            "index": "3",
+            "name": "Spider",
+            "file": "images/fspider.gif"
+        },
+        {
+            "index": "4",
+            "name": "Dizzy",
+            "file": "images/fdizzy.gif"
+        },
+        {
+            "index": "5",
+            "name": "Simple",
+            "file": "images/fsimple.gif"
+        }
     ],
     "Mouth": [
         {
@@ -51,6 +82,16 @@ options = {
             "name": "Vampire",
             "file": "images/fvampire.gif"
         },
+        {
+            "index": "3",
+            "name": "Smile",
+            "file": "images/fsmile.gif"
+        },
+        {
+            "index": "4",
+            "name": "Tongue",
+            "file": "images/ftounge.gif"
+        }
     ],
 }
 
@@ -133,7 +174,6 @@ while more == 'y':
         if shape_to_add == '':
             print("Invalid Extras Number.. please try again")
 
-    # Add the Shape to the Screen
     # Add the Shape
     stamp_id = addShape(shape_to_add['file'])
 
