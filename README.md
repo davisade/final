@@ -1,4 +1,5 @@
 # Proposal
+VIDEO LINK - https://www.youtube.com/watch?v=W64cchKsejo
 
 ## What will (likely) be the title of your project?
 
