@@ -18,36 +18,36 @@ turtle.setup(1000, 667)
 options = {
     "Body": [
         {
-            "index": 1,
+            "index": "1",
             "name": "Spikey",
             "file": "fspikey.gif"
         },
         {
-            "index": 2,
+            "index": "2",
             "name": "Leggy",
             "file": "fleggy.gif"
         },
     ],
     "Eyes": [
         {
-            "index": 1,
+            "index": "1",
             "name": "Angry",
             "file": "fangry.gif"
         },
         {
-            "index": 2,
+            "index": "2",
             "name": "Cute",
             "file": "fcute.gif"
         },
     ],
     "Mouth": [
         {
-            "index": 1,
+            "index": "1",
             "name": "Creepy",
             "file": "fcreepy.gif"
         },
         {
-            "index": 2,
+            "index": "2",
             "name": "Vampire",
             "file": "fvampire.gif"
         },
@@ -57,21 +57,27 @@ options = {
 # Extras
 extras = {
     "Horns": {
-            "index": 1,
+            "index": "1",
             "name": "Horns",
             "file": "fhorn.gif"
     },
     "Cat": {
-            "index": 2,
+            "index": "2",
             "name": "Cat",
             "file": "fcat.gif"
     },
     "Blush": {
-            "index": 3,
+            "index": "3",
             "name": "Blush",
             "file": "fblush.gif"
     },
 }
+
+# Functions
+def addShape(file):
+    wn.addshape(file)
+    t.shape(file)
+    return t.stamp()
 
 print("Welcome to create a monster!")
 
@@ -86,7 +92,7 @@ for option in options.keys():
         # For each of the types in the option, allow user to select type
         for type in options[option]:
             print(f"{type['index']}. {type['name']}")
-        index = int(input(f'Select {option} Number: '))
+        index = input(f'Select {option} Number: ')
 
         # Add type to the screen
         for type in options[option]:
@@ -96,12 +102,17 @@ for option in options.keys():
         if shape_to_add == '':
             print("Invalid Monster Number.. please try again")
 
-    wn.addshape(shape_to_add['file'])
-    t.shape(shape_to_add['file'])
-    t.stamp()
+    # Add the Shape
+    addShape(shape_to_add['file'])
 
 # Prompt User for Extras
-more = input("Do you want to add any extras to your monster? y/n: ")
+more = ''
+while more == '':
+    more = input("Do you want to add any extras to your monster? y/n: ")
+    if more != 'y' and more != 'n':
+        print("Invalid Option")
+        more = ''
+        
 while more == 'y':
 
     shape_to_add = ''
@@ -111,7 +122,7 @@ while more == 'y':
         # Select the Extra
         for extra in extras.keys():
             print(f"{extras[extra]['index']}. {extra}")
-        index = int(input('Select Extra Number: '))
+        index = input('Select Extra Number: ')
 
         # Add extra to the screen
         shape_to_add = ""
@@ -123,12 +134,17 @@ while more == 'y':
             print("Invalid Extras Number.. please try again")
 
     # Add the Shape to the Screen
-    wn.addshape(shape_to_add['file'])
-    t.shape(shape_to_add['file'])
-    stamp_id = t.stamp()
+    # Add the Shape
+    stamp_id = addShape(shape_to_add['file'])
 
     # Let's check to see if the user likes their extra
-    like_extra = input("Do you want to keep your extra? y/n: ")
+    like_extra = ''
+    while like_extra == '':
+        like_extra = input("Do you want to keep your extra? y/n: ")
+        if like_extra != 'y' and like_extra != 'n':
+            print("Invalid Option")
+            like_extra = ''
+
     if like_extra == 'n':
         t.clearstamp(stamp_id)
         t.hideturtle()
@@ -138,7 +154,12 @@ while more == 'y':
 
     # If there are more extras, prompt user else, end
     if len(extras.keys()) > 0:
-        more = input("Do you want to add any more extras? y/n: ")
+        more = ''
+        while more == '':
+            more = input("Do you want to add any more extras? y/n: ")
+            if more != 'y' and more != 'n':
+                print("Invalid Option")
+                more = ''
     else:
         more = 'n'
 
